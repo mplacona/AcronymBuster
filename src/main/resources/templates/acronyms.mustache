@@ -1,0 +1,33 @@
+{{> header}}
+
+<h1>{{title}}</h1>
+
+<div class="acronyms">
+
+    {{#banner.title}}
+        <section>
+            <header class="banner">
+                <h2 class="banner-title">{{banner.title}}</h2>
+            </header>
+            <div class="banner-content">
+                {{banner.content}}
+            </div>
+        </section>
+    {{/banner.title}}
+
+    {{#acronyms}}
+        <section>
+            <header class="acronym-header">
+                <h2 class="acronym-title"><a href="/acronym/{{title}}">{{title}}</a></h2>
+            </header>
+            <div class="acronym-description">
+                Description: {{description}}
+            </div>
+            <div class="acronym-meta">
+                By  <strong>{{author.firstname}}</strong>, on <strong>{{addedAt}}</strong>
+            </div>
+        </section>
+    {{/acronyms}}
+</div>
+
+{{> footer}}

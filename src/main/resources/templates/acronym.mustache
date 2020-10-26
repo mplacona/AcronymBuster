@@ -1,0 +1,19 @@
+{{> header}}
+
+<section class="acronym">
+    <header class="acronym-header">
+        <h1 class="acronym-title">{{acronym.title}}</h1>
+    </header>
+
+    <div class="acronym-description">
+        <strong>Description:</strong> {{acronym.description}}
+    </div>
+    <div class="acronym-usage">
+        <strong>Usage:</strong> {{acronym.usage}}
+    </div>
+    <div class="acronym-meta">
+        <p>By  <strong>{{acronym.author.firstname}}</strong>, on <strong>{{acronym.addedAt}}</strong></p>
+    </div>
+</section>
+
+{{> footer}}
